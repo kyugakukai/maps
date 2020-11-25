@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>飲食店マップ</title>
+  </head>
+  <body>
+    <div id="map" style="width:100%px; height:80%"></div>
+
+    <form name="index_form" action="index.html">
+    <p>
+    <label>番号を入力：<input type="number" name="number" placeholder="1"></label>
+    <input type="button" value="検索" onclick="centerMarker()">
+    </p>
+    </form>
+
+    <script type="text/javascript" src="map.js">
+    </script>
+
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBnLDva1VaMVh47oJVh0YJLK6LCm8Op-pU&callback=initMap">
+    </script>
+  </body>
+</html>
