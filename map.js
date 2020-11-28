@@ -1,6 +1,7 @@
 var map;
 var initLatlng;
 var currentInfoWindow;
+var currentInfoWindow_2;
 var latLng = [];
 var marker = [];
 var infoWindow = [];
@@ -86,12 +87,10 @@ function initMap() {
     };
 
     map = new google.maps.Map(document.getElementById("map"), opts);
-    //var target = document.getElementById("searchLink");
     //marker作成
     
     for(let i = 0; i < latLng.length; i++)
     {
-        //target.href = url[i];
         marker[i] = new google.maps.Marker({
             position: latLng[i],
             map: map,
@@ -107,11 +106,11 @@ function initMap() {
         marker[i].addListener('click', function() {
             map.setCenter(latLng[i]);
             infoWindow[i].open(map, marker[i]);
+            if (currentInfoWindow) {
+                currentInfoWindow.close();
+            }
             currentInfoWindow = infoWindow[i];
         });
-        if(currentInfoWindow){
-            currentInfoWindow.close();
-        }
     }
 }
 
@@ -120,6 +119,25 @@ function centerMarker(){
     for(let i = 0; i < latLng.length; i++){
         if(number == i + 1){
             map.setCenter(latLng[i]);
+            infoWindow[i].open(map, marker[i]);
+            if (currentInfoWindow) {
+                currentInfoWindow.close();
+            }
+            currentInfoWindow = infoWindow[i];
+        }
+    }
+}
+
+function pullDownList(){
+    var number = index_form.id.selectedIndex;
+    for(let i = 0; i < latLng.length; i++){
+        if(number + 1 == i + 1){
+            map.setCenter(latLng[i]);
+            infoWindow[i].open(map, marker[i]);
+            if (currentInfoWindow) {
+                currentInfoWindow.close();
+            }
+            currentInfoWindow = infoWindow[i];
         }
     }
 }
