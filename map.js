@@ -1,10 +1,10 @@
 var map;
 var initLatlng;
 var currentInfoWindow;
-var currentInfoWindow_2;
 var latLng = [];
 var marker = [];
 var infoWindow = [];
+var infoWnd;
 var restaurantName = ['Jelly fish', '善', '西銀座 潤和'];
 var Name = ['S47松永正行', 'S39木下善成', 'S38宇佐美和男'];
 var lat = [32.801716,32.801239,32.800216];
@@ -100,16 +100,16 @@ function initMap() {
                 color: 'white'
             }
         });
-        infoWindow[i] = new google.maps.InfoWindow({
-            content: '<h1>' + restaurantName[i] + '<br>' + Name[i] + '<br>' + '<a id="searchLink" href="' + url[i] + '" target="_blank">リンク</a><br/>'
-        });
         marker[i].addListener('click', function() {
             map.setCenter(latLng[i]);
-            infoWindow[i].open(map, marker[i]);
+            infoWnd = new google.maps.InfoWindow({
+                content: '<h1>' + restaurantName[i] + '<br>' + Name[i] + '<br>' + '<a id="searchLink" href="' + url[i] + '" target="_blank">リンク</a><br/>'
+            });
             if (currentInfoWindow) {
                 currentInfoWindow.close();
             }
-            currentInfoWindow = infoWindow[i];
+            infoWnd.open(map, marker[i]);
+            currentInfoWindow = infoWnd;
         });
     }
 }
@@ -119,11 +119,14 @@ function centerMarker(){
     for(let i = 0; i < latLng.length; i++){
         if(number == i + 1){
             map.setCenter(latLng[i]);
-            infoWindow[i].open(map, marker[i]);
+            infoWnd = new google.maps.InfoWindow({
+                content: '<h1>' + restaurantName[i] + '<br>' + Name[i] + '<br>' + '<a id="searchLink" href="' + url[i] + '" target="_blank">リンク</a><br/>'
+            });
             if (currentInfoWindow) {
                 currentInfoWindow.close();
             }
-            currentInfoWindow = infoWindow[i];
+            infoWnd.open(map, marker[i]);
+            currentInfoWindow = infoWnd;
         }
     }
 }
@@ -133,11 +136,14 @@ function pullDownList(){
     for(let i = 0; i < latLng.length; i++){
         if(number + 1 == i + 1){
             map.setCenter(latLng[i]);
-            infoWindow[i].open(map, marker[i]);
+            infoWnd = new google.maps.InfoWindow({
+                content: '<h1>' + restaurantName[i] + '<br>' + Name[i] + '<br>' + '<a id="searchLink" href="' + url[i] + '" target="_blank">リンク</a><br/>'
+            });
             if (currentInfoWindow) {
                 currentInfoWindow.close();
             }
-            currentInfoWindow = infoWindow[i];
+            infoWnd.open(map, marker[i]);
+            currentInfoWindow = infoWnd;
         }
     }
 }
