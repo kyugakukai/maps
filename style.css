@@ -1,3 +1,24 @@
 html, body {
-    height: 100%;
+    padding:0;
+    margin:0;
+    height:100%
+}
+
+div.cover {
+    display: table;
+    border-spacing: 1em 3px;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+div.cover div.box1 {
+    display: table-cell;
+    width: 33%;
+}
+div.cover div.box2 {
+    display: table-cell;
+    width: 33%
+}
+div.cover div.box3 {
+    display: table-cell;
 }
