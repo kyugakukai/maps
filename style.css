@@ -27,3 +27,7 @@ div.cover div.box2 {
 div.cover div.box3 {
     display: table-cell;
 }
+label {
+    font-size: 50px;
+    text-align: center;
+}
