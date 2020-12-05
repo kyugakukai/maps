@@ -694,3 +694,37 @@ function pullDownList(){
         }
     }
 }
+
+function setCategory(){
+    var number = index_form.cid.selectedIndex;
+    for(let i = 0; i < latLng.length; i++){
+        marker[i].setVisible(false);
+    }
+    if(number + 1 == 1) {
+        marker[4].setVisible();
+        marker[18].setVisible();
+        marker[19].setVisible();
+        marker[26].setVisible();
+        marker[30].setVisible();
+        marker[32].setVisible();
+        marker[42].setVisible();
+        marker[44].setVisible();
+        marker[45].setVisible();
+        marker[48].setVisible();
+        marker[51].setVisible();
+        marker[52].setVisible();
+        marker[53].setVisible();
+        marker[64].setVisible();
+        marker[81].setVisible();
+        marker[87].setVisible();
+        marker[88].setVisible();
+        marker[96].setVisible();
+        marker[97].setVisible();
+        marker[101].setVisible();
+    }
+    if(number + 1 == 2){
+        for(let i = 0; i < latLng.length; i++){
+            marker[i].setVisible();
+        }
+    }
+}
