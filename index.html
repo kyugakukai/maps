@@ -9,11 +9,13 @@
     <div id="map" style="width:100%; height:80%"></div>
     <div class="cover">
       <div class="box1">
+        <label>　番号検索　</label>
         <form name="index_form" action="index.html">
-        <input type="number" style="width:100%; height:2.5em; font-size: 50px" name="number" placeholder="番号を入力">
+        <input type="number" style="width:100%; height:2.5em; font-size: 50px" name="number" placeholder="1">
         <input type="button" style="width:100%; height:2.5em; font-size: 50px" value="検索" onclick="centerMarker()">
       </div>
       <div class="box2">
+        <label>　店名検索　</label>
         <select name="id" style="width:100%; height:2.5em; font-size: 50px">
           <option value="1">1 天國</option>
           <option value="2">2 上方風ぎょうざ　扇里</option>
@@ -122,13 +124,17 @@
           <option value="105">105 Sky Terrace</option>
           <option value="106">106 ROXY</option>
           <option value="107">107 BAR SFIDA</option>
-          <option value="108">108 大盛堂</option>
-         
+          <option value="108">108 大盛堂</option>      
         </select>
         <input type="button" style="width:100%; height:2.5em; font-size: 50px" value="検索" onclick="pullDownList()">
       </div>
       <div class="box3">
-        
+        <label>カテゴリ検索</label>
+        <select name="cid" style="width:100%; height:2.5em; font-size: 50px">
+          <option value="1">居酒屋</option>
+          <option value="2">全て表示</option>
+        </select>
+        <input type="button" style="width:100%; height:2.5em; font-size: 50px" value="検索" onclick="setCategory()">
       </div>
     </div>
     <script type="text/javascript" src="map.js">
