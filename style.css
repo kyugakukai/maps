@@ -3,7 +3,12 @@ html, body {
     margin:0;
     height:100%
 }
-
+input , select , textarea , button{
+    box-sizing: border-box;
+}
+textarea{
+    display: block;
+}
 div.cover {
     display: table;
     border-spacing: 1em 3px;
