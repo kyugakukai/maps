@@ -812,7 +812,6 @@ function setCategory(){
         marker[56].setVisible();
         marker[57].setVisible();
         marker[66].setVisible();
-        marker[99].setVisible();
     }
     if(number + 1 == 11){
         marker[0].setVisible();
@@ -836,6 +835,7 @@ function setCategory(){
     }
     if(number + 1 == 14){
         marker[33].setVisible();
+        marker[99].setVisible();
     }
     if(number + 1 == 15){
         for(let i = 0; i < latLng.length; i++){
