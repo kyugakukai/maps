@@ -723,6 +723,121 @@ function setCategory(){
         marker[101].setVisible();
     }
     if(number + 1 == 2){
+        marker[5].setVisible();
+        marker[49].setVisible();
+        marker[50].setVisible();
+        marker[55].setVisible();
+        marker[58].setVisible();
+        marker[4].setVisible();
+        marker[71].setVisible();
+        marker[90].setVisible();
+        marker[104].setVisible();
+    }
+    if(number + 1 == 3){
+        marker[2].setVisible();
+        marker[3].setVisible();
+        marker[6].setVisible();
+        marker[8].setVisible();
+        marker[16].setVisible();
+        marker[17].setVisible();
+        marker[23].setVisible();
+        marker[24].setVisible();
+        marker[25].setVisible();
+        marker[27].setVisible();
+        marker[36].setVisible();
+        marker[39].setVisible();
+        marker[40].setVisible();
+        marker[43].setVisible();
+        marker[47].setVisible();
+        marker[61].setVisible();
+        marker[67].setVisible();
+        marker[77].setVisible();
+        marker[79].setVisible();
+        marker[83].setVisible();
+        marker[91].setVisible();
+        marker[102].setVisible();
+        marker[103].setVisible();
+        marker[105].setVisible();
+        marker[106].setVisible();
+    }
+    if(number + 1 == 4){
+        marker[9].setVisible();
+        marker[13].setVisible();
+        marker[14].setVisible();
+        marker[28].setVisible();
+        marker[34].setVisible();
+        marker[59].setVisible();
+        marker[60].setVisible();
+        marker[68].setVisible();
+        marker[70].setVisible();
+        marker[72].setVisible();
+        marker[98].setVisible();
+    }
+    if(number + 1 == 5){
+        marker[7].setVisible();
+        marker[29].setVisible();
+        marker[35].setVisible();
+        marker[38].setVisible();
+        marker[41].setVisible();
+        marker[54].setVisible();
+        marker[74].setVisible();
+        marker[75].setVisible();
+        marker[76].setVisible();
+        marker[82].setVisible();
+        marker[84].setVisible();
+        marker[94].setVisible();
+    }
+    if(number + 1 == 6){
+        marker[21].setVisible();
+        marker[22].setVisible();
+        marker[37].setVisible();
+        marker[63].setVisible();
+        marker[100].setVisible();
+    }
+    if(number + 1 == 7){
+        marker[12].setVisible();
+        marker[62].setVisible();
+        marker[69].setVisible();
+    }
+    if(number + 1 == 8){
+        marker[1].setVisible();
+        marker[78].setVisible();
+    }
+    if(number + 1 == 9){
+        marker[15].setVisible();
+    }
+    if(number + 1 == 10){
+        marker[10].setVisible();
+        marker[31].setVisible();
+        marker[56].setVisible();
+        marker[57].setVisible();
+        marker[66].setVisible();
+        marker[99].setVisible();
+    }
+    if(number + 1 == 11){
+        marker[0].setVisible();
+        marker[46].setVisible();
+        marker[80].setVisible();
+    }
+    if(number + 1 == 12){
+        marker[20].setVisible();
+        marker[65].setVisible();
+        marker[85].setVisible();
+        marker[86].setVisible();
+        marker[89].setVisible();
+        marker[107].setVisible();
+    }
+    if(number + 1 == 13){
+        marker[11].setVisible();
+        marker[73].setVisible();
+        marker[92].setVisible();
+        marker[93].setVisible();
+        marker[95].setVisible();
+    }
+    if(number + 1 == 14){
+        marker[33].setVisible();
+    }
+    if(number + 1 == 15){
         for(let i = 0; i < latLng.length; i++){
             marker[i].setVisible();
         }
